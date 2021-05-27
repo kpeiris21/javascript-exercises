@@ -15,10 +15,12 @@ const compareGuesses = user => {
     let comp   = generateComp();
     let userDistance = Math.abs(target - user);
     let compDistance = Math.abs(target - comp);
-    return userDistance <= compDistance
+    console.log(target);
+    console.log(comp);
+    return (userDistance <= compDistance);
+
     
 };
+console.log(compareGuesses(5))
 
-console.log(generateTarget());
-console.log(generateComp());
-console.log(compareGuesses(9));
+
